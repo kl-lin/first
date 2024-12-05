@@ -1,0 +1,53 @@
+<a class="mobileMenuBtn" href="#mobileNav"> <i class="fa-bars"></i> </a>
+<nav class="mm-menu mmenu-nav" id="mobileNav">
+  <ul>
+    <li> <a href="{pboot:sitedomain}">网站首页</a></li>
+    {pboot:nav num=10 parent=0}
+    <li><a title="[nav:name]" href="[nav:link]">[nav:name]</a></li>
+    {/pboot:nav}
+  </ul>
+</nav>
+<script>seajs.use(['mmenucss', 'mmenu'],
+function() {
+$('#mobileNav').mmenu();
+});</script>
+<div id="pageOuter">
+<div class="row" id="el_5890406756593980" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_8032379561534737" path="column">
+        <div class="container">
+          <div class="row" id="el_3243748167538057" path="row">
+            <div class="rowFluid">
+              <div class="span4 col-sm-12">
+                <div class="column" id="el_7219378616856478" path="column">
+                  <div class="pluginWrapper plugin_4847181857816236" id="plugin_4847181857816236" data-areaid="4847181857816236" data-edit="true" path="plugin">
+                    <div class="pluginContent"> <a href="{pboot:sitedomain}" title="{pboot:pagetitle}"> <img src="{pboot:sitedomain}/skin/images/logo.png" alt="{pboot:pagetitle}"></a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span8">
+                <div class="column" id="el_1490134438561602" path="column">
+                  <div class="pluginWrapper plugin_1167426645492523" id="plugin_1167426645492523" data-areaid="1167426645492523" data-edit="false" path="plugin">
+                    <div class="pluginContent">
+                      <ul class="menu reset">
+                        <li class="mli"> <a class="mod-first nav_home {pboot:if(0=='{sort:scode}')}active{/pboot:if}" href="{pboot:sitedomain}" title="首页">首页</a></li>
+                        {pboot:nav num=10 parent=0}
+                        {pboot:if('[nav:scode]'=='{sort:scode}')}
+                        <li class="mli"><a class="mod-first active" title="[nav:name]" href="[nav:link]">[nav:name]</a></li>
+                        {else}
+                        <li class="mli"><a class="mod-first" title="[nav:name]" href="[nav:link]">[nav:name]</a></li>
+                        {/pboot:if}
+                        {/pboot:nav}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

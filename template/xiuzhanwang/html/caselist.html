@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>{sort:title}	- {pboot:companyname}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<link href="{pboot:sitedomain}/skin/css/font-awesome.min.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/owl.carousel.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/grid.1.1.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/base.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/plugin-style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/el-style.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/skin/js/jquery-1.11.0.min.js"></script>
+<script>var website = {
+'root': '/skin',
+'websiteId': '556',
+'currentNavId': 'nav_7330',
+'resourceId': '10075',
+'resourceCode': 'product',
+'isMobile': navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i)
+};</script>
+<script src="{pboot:sitedomain}/skin/js/functions.js"></script>
+<script src="{pboot:sitedomain}/skin/js/sea.js"></script>
+<script src="{pboot:sitedomain}/skin/js/sea.run.js"></script>
+<script>website["dataId"] = '';</script>
+</head>
+
+<body>
+{include file=head.html}
+<div class="row" id="el_1801141529053158" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_8280571164526634" path="column">
+        <div class="container">
+          <div class="row" id="el_7074713475936920" path="row">
+            <div class="rowFluid">
+              <div class="span3 col-xs-12">
+                <div class="column" id="el_2396172530987981" path="column">
+                  <div class="pluginWrapper plugin_2151112839028255" id="plugin_2151112839028255" data-areaid="2151112839028255" data-edit="false" path="plugin">
+                    <div class="pluginContent">{sort:name}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="span9 col-xs-12">
+                <div class="column" id="el_4283485922746463" path="column">
+                  <div class="pluginWrapper plugin_8102449055727272" id="plugin_8102449055727272" data-areaid="8102449055727272" data-edit="false" path="plugin">
+                    <div class="pluginContent"> {pboot:position} </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" id="el_6912537154461598" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_8568268448802353" path="column">
+        <div class="container">
+          <div class="row" id="el_7527625515386738" path="row">
+            <div class="rowFluid">
+              {include file=left.html}
+              <div class="span9 col-xm-12">
+                <div class="column" id="el_8330238575465135" path="column">
+                  <div class="pluginWrapper plugin_7268824357765019" id="plugin_7268824357765019" data-areaid="7268824357765019" data-edit="false" path="plugin">
+                    <div class="pluginContent">{sort:name}</div>
+                  </div>
+                  <div class="pluginWrapper plugin_7391455262691301" id="plugin_7391455262691301" data-areaid="7391455262691301" data-edit="false" path="plugin">
+                    <div class="pluginContent">
+                      <div class="mod-list clearfix"> {pboot:list num=9 order=date}
+                        <div class="col-lg-4 col-sm-12">
+                          <div class="mod-item"> <a class="mod-pic" href="[list:link]" title="[list:title]"> <img class="lazyImg" src="{pboot:sitedomain}/skin/images/lazyload.png" data-original="[list:ico]" alt="[list:title]"></a> <a class="mod-title" href="[list:link]" title="[list:title]">[list:title]</a></div>
+                        </div>
+                        {/pboot:list} </div>
+                      <div class="ab_pages">
+                          <ul>
+                            {pboot:if({page:rows}>0)}
+                            <a href="{page:index}">首页</a>
+                            <a href='{page:pre}'>上一页</a>
+                            {page:numbar}
+                            <a href='{page:next}'>下一页</a>
+                            <a href='{page:last}'>末页</a>
+                            {/pboot:if}
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{include file=foot.html}
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>{sort:title}	- {pboot:companyname}</title>
+<meta name="keywords" content="{sort:keywords}">
+<meta name="description" content="{sort:description}">
+<link href="{pboot:sitedomain}/skin/css/font-awesome.min.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/owl.carousel.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/grid.1.1.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/base.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/plugin-style.css" rel="stylesheet">
+<link href="{pboot:sitedomain}/skin/css/el-style.css" rel="stylesheet">
+<script src="{pboot:sitedomain}/skin/js/jquery-1.11.0.min.js"></script>
+<script>var website = {
+'root': '/skin',
+'websiteId': '556',
+'currentNavId': 'nav_7333',
+'resourceId': '10085',
+'resourceCode': 'feedback',
+'isMobile': navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i)
+};</script>
+<script src="{pboot:sitedomain}/skin/js/functions.js"></script>
+<script src="{pboot:sitedomain}/skin/js/sea.js"></script>
+<script src="{pboot:sitedomain}/skin/js/sea.run.js"></script>
+<script>website["dataId"] = '';</script>
+</head>
+
+<body>
+{include file=head.html}
+<div class="row" id="el_1911730262347607" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_5515645544786053" path="column">
+        <div class="container">
+          <div class="row" id="el_5084403788734397" path="row">
+            <div class="rowFluid">
+              <div class="span3 col-xs-12">
+                <div class="column" id="el_7846561454722115" path="column">
+                  <div class="pluginWrapper plugin_7713563484648652" id="plugin_7713563484648652" data-areaid="7713563484648652" data-edit="false" path="plugin">
+                    <div class="pluginContent">{sort:name}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="span9 col-xs-12">
+                <div class="column" id="el_6589617683384871" path="column">
+                  <div class="pluginWrapper plugin_3579594330714024" id="plugin_3579594330714024" data-areaid="3579594330714024" data-edit="false" path="plugin">
+                    <div class="pluginContent"> {pboot:position separator=>>} </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" id="el_4660699045351917" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_1542257729343937" path="column">
+        <div class="container">
+          <div class="row" id="el_7518573073451529" path="row">
+            <div class="rowFluid">
+              {include file=left.html}
+              <div class="span9 col-xm-12">
+                <div class="column" id="el_2520310922534304" path="column">
+                  <div class="pluginWrapper plugin_8855824210284613" id="plugin_8855824210284613" data-areaid="8855824210284613" data-edit="false" path="plugin">
+                    <div class="pluginContent">{sort:name}</div>
+                  </div>
+                  <div class="pluginWrapper plugin_2287497286048423" id="plugin_2287497286048423" data-areaid="2287497286048423" data-edit="false" path="plugin">
+                    <div class="pluginContent">
+                      <form id="feedbackFrm" action="{pboot:msgaction}" method="post">
+                        <div class="input-row">
+                          <div class="input-caption"> <strong class="required">*</strong>姓名</div>
+                          <input class="input-text" type="text" name="name" id="name" placeholder="姓名">
+                        </div>
+                        <div class="input-row">
+                          <div class="input-caption"> <strong class="required">*</strong>手机</div>
+                          <input class="input-text" type="text" name="tel" id="tel" placeholder="手机">
+                        </div>
+                        <div class="input-row">
+                          <div class="input-caption">邮箱</div>
+                          <input class="input-text" type="text" name="email" id="email" placeholder="邮箱">
+                        </div>
+                        <div class="input-row">
+                          <div class="input-caption"> <strong class="required">*</strong>内容</div>
+                          <textarea class="textarea" name="content" id="content" placeholder="内容" rows="6"></textarea>
+                        </div>
+                        <div class="input-row">
+                          <input class="input-button" type="submit" value="提 交" id="tj">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{include file=foot.html}
+</div>
+<script>
+	$(function(){
+		$('#tj').click(function(){
+			//alert(1)
+			if($('#name').val()==''){alert('请输入您的姓名！'); $("#name").focus(); return false;}
+			if ($("#tel").val() == "") { alert("请输入你的手机！"); $("#tel").focus(); return false; } 
+			if (!$("#tel").val().match(/^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(16[0-9]{1})|(17[0-9]{1})|(18[0-9]{1})|(19[0-9]{1}))+\d{8})$/)) { alert("手机号码格式不正确！"); $("#tel").focus(); return false;}  
+			if($('#content').val()==''){alert('请输入留言内容！');return false;}
+		})
+	})
+</script>
+</body>
+</html>

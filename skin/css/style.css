@@ -1,0 +1,29 @@
+/* 连云港北通云计算有限公司 */
+/* 精品与原创网站模板提供商，一站式建站 */
+/* 主营业务：pbootcms模板、二次开发、云服务器租赁 */
+/* 牛马模板网：Www.niumacms.Com */
+/* 域名/主机/服务器：Www.beitongyun.Com */
+/* QQ：77587933  75828022 */
+
+body {
+	background-color: #ffffff;
+	background-position: center top;
+	font-family: 'Microsoft YaHei', 'Simsun', Arial;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #666666;
+}
+a {
+	color: #666666;
+}
+a:hover {
+	color: #0084e9;
+}
+.ab_pages{clear:both;padding:20px 0;font-size:14px;text-align:center; overflow:hidden}
+.ab_pages ul{display:inline-block;margin:0 auto;padding:0}
+.ab_pages ul  a{color:#555;display:block;padding: 2px 10px;  border: 1px solid #ddd;float: left;margin: 0 5px;}
+.ab_pages ul  a.page-num-current{ background:#ddd;}
+
+@media screen and (max-width: 768px) {
+    .mei{ display:none}
+}
